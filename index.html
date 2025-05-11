@@ -1,0 +1,884 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimal Surgery Showcase</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #111111;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0.5em 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .divider {
+      height: 1px;
+      background-color: #eee;
+      margin: 40px 0;
+    }
+    .surgery-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .comparison-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .comparison-item {
+      flex: 1 1 200px;
+      max-width: 280px;
+    }
+    .comparison-label {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .image-container {
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #ccc;
+      cursor: crosshair;
+    }
+    .image-container img {
+      width: 100%;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .comparison-row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="pictures/new chatgpt logo ready.png" alt="Logo" style="width: 200px; max-width: 50%;">
+    <h1>Procedures</h1>
+  </header>
+
+  <section class="surgery-section">
+  <h1 style="text-align: left;">Rhinoplasty</h1>
+  <div class="divider"></div>
+
+      <!-- <h3 class="section-header">Front View</h3> -->
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div
+            class="image-container"
+            onmousemove="zoom(event)"
+            onmouseleave="resetZoom(event)"
+          >
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/anfas  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/Rhinoplasty small /anfas  nosejob ready small copy.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vpravo  edit without chain better version Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/Rhinoplasty small /3 4 vpravo  edit without chain betternose job ai nose  small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vpravo  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/Rhinoplasty small /bok vpravo  edit without chain nose job small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/from underneath  edit without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/Rhinoplasty small /from underneath  edit without nosejob small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vlevo edit without chain-Wiederhergestellt Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/Rhinoplasty small /3 4 vlevo edit without chain-nosejob small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vlevo  without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/Rhinoplasty small /bok vlevo  without chain nosejob small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="surgery-section">
+      <h1 style="text-align: left;">Otoplasty</h1>
+      <div class="divider"></div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/anfas  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/otoplasty small copy/anfas  edit without chain ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vpravo  edit without chain better version Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/otoplasty small copy/3 4 vpravo  ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vpravo  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/otoplasty small copy/bok vpravo  ear small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/from underneath  edit without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/otoplasty small copy/from underneath  ear ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vlevo edit without chain-Wiederhergestellt Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/otoplasty small copy/3 4 vlevo ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vlevo  without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/otoplasty small copy/bok vlevo ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="surgery-section">
+      <h1 style="text-align: left;">Jawline Surgery</h1>
+      <div class="divider"></div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/anfas  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/jawline small /anfas  edit without chain jawline small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vpravo  edit without chain better version Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/jawline small /3 4 vpravo  edit without chain better version jawline small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vpravo  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/jawline small /bok vpravo  edit without chain jawline small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/from underneath  edit without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/jawline small /from underneath  edit without chain jawline small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vlevo edit without chain-Wiederhergestellt Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/jawline small /3 4 vlevo edit without chain-jawline small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vlevo  without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/jawline small /bok vlevo  without chain jawline small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="surgery-section">
+      <h1 style="text-align: left;">Endoscopic Facelift</h1>
+      <div class="divider"></div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/anfas  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/endoscopic facelft small/anfas  endoscopic face lift smal.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vpravo  edit without chain better version Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/endoscopic facelft small/3 4 vpravo endo face lift smale.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vpravo  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures//endoscopic facelft small/bok vpravo  endo face lift smal.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/from underneath  edit without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/endoscopic facelft small/from underneath  endoface lift smal.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vlevo edit without chain-Wiederhergestellt Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/endoscopic facelft small/3 4 vlevo end face lift small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vlevo  without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/endoscopic facelft small/bok vlevo  endo face lift smal.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="surgery-section">
+      <h1 style="text-align: left;">Chin Augmentation</h1>
+      <div class="divider"></div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/anfas  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/chin augmentation small/ready anfas  edit without chain small 3.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vpravo  edit without chain better version Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/chin augmentation small/3 4 vpravo  edit chin ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vpravo  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/chin augmentation small/bok vpravo  chin ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/from underneath  edit without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/chin augmentation small/from underneath  chin ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vlevo edit without chain-Wiederhergestellt Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/chin augmentation small/3 4 vlevo edit chin ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vlevo  without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/chin augmentation small/bok vlevo  chin ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="surgery-section">
+      <h1 style="text-align: left;">Blepharoplasty</h1>
+      <div class="divider"></div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/anfas  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/blepharoplasty small/anfasааа  ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vpravo  edit without chain better version Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/blepharoplasty small/3 4 vpravo  ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vpravo  edit without chain Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/blepharoplasty small/bok vpravo  ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/from underneath  edit without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/blepharoplasty small/from underneath  ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-row">
+        <div class="comparison-item">
+          <div class="comparison-label" style="font: 40px;">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/3 4 vlevo edit without chain-Wiederhergestellt Kopie.png"
+              alt="Before Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/blepharoplasty small/3 4 vleevo ready small.png"
+              alt="After Rhinoplasty - Front View"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">Before</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/close ups small BEFORE/bok vlevo  without chain Kopie.png"
+              alt="Before 1"
+            />
+          </div>
+        </div>
+
+        <div class="comparison-item">
+          <div class="comparison-label">After</div>
+          <div class="image-container">
+            <img
+              loading="lazy" src="pictures/blepharoplasty small/bok vlevo ready small.png"
+              alt="After 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <script>
+    document.querySelectorAll('.image-container').forEach(container => {
+      const img = container.querySelector('img');
+      container.addEventListener('mousemove', e => {
+        const rect = container.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        img.style.transform = 'scale(2)';
+        img.style.transformOrigin = `${x}% ${y}%`;
+      });
+      container.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+        img.style.transformOrigin = 'center';
+      });
+    });
+  </script>
+</body>
+</html>
